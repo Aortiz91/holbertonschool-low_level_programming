@@ -3,7 +3,7 @@
  * main - Entry
  * Return: o
  */
-int main (void)
+int main(void)
 {
 	char charType;
 	int intType;
@@ -17,4 +17,4 @@ int main (void)
 	printf("Size of long long: %ld bytes?n", sizeof(longlongType);
 	printf("Size of float: %ld bytes?n", sizeof(floatType);
 		return (o);
-}
+		}
