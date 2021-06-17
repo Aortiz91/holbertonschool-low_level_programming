@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
 * printf - produce output according to a format described
 *
