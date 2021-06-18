@@ -9,7 +9,6 @@ int main(void)
 int abc;
 int ABC;
 for (abc = 'a'; abc <= 'z'; abc++)
-for (ABC = 'A'; ABC <= 'Z'; ABC++)
 putchar (abc);
 for (ABC = 'A'; ABC <= 'Z'; ABC++)
 putchar (ABC);
