@@ -10,7 +10,7 @@ int num;
 int abc;
 for (num = '0' ; num <= '9' ; num++)
 putchar (num);
-for (abc = '0' ; abc <= 'f' ; abc++)
+for (abc = 'a' ; abc <= 'f' ; abc++)
 putchar (abc);
 putchar ('\n');
 return (0);
