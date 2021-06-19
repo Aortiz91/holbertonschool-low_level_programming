@@ -9,7 +9,7 @@ int main(void)
 int comb;
 for (comb = '0' ; comb <= '9' ; comb++)
 {putchar (comb);
-if (c != '9')
+if (comb != '9')
 {
 putchar (',');
 putchar (' ');
