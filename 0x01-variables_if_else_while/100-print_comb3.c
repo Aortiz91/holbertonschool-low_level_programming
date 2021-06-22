@@ -3,7 +3,7 @@
  * main - Entry data
  * Write a program that prints all possible different combinations
  * of two digits, no repeating numbers
- * Return: Always (0) Success
+i * Return: Always (0) Success
  */
 int main(void)
 {
@@ -15,8 +15,8 @@ int main(void)
 			{
 				if (!(a > b || a == b))
 				{
-					putchar('a');
-					putchar('b');
+					putchar(a);
+					putchar(b);
 					if (a != '8' || b != '9')
 					{
 						putchar(',');
