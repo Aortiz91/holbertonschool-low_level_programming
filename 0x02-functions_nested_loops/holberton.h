@@ -1,0 +1,2 @@
+int putcharb (int c);
+
