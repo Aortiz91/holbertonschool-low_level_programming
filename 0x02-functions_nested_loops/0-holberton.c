@@ -8,11 +8,11 @@ int main(void)
 {
 	char a[]= "Holberton";
 	int b = '0';
-		for (b = '0' ; b = '9' ; b++)
+		while (a[b] !='\0')
 		{
-			while (b !='\0')
-			_putchar(a[b]);
-			_putchar('\n');
+		_putchar(a[b]);
+		b++;
 		}
+			_putchar('\n');
 return (0);
 }
