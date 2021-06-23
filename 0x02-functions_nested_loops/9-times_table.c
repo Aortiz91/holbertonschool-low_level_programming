@@ -20,23 +20,22 @@ int m;
 					_putchar ((m / 10) + '0');
 					_putchar ((m % 10) + '0');
 				}
-				else if (m == 0 && b == 0 && a != 0)
-				{
-					_putchar ('0');
-				}
-				else if (m == 0 && b != 0 && a == 0)
-					_putchar (',');
-					_putchar (' ');
-					_putchar ('0');
-				}
-				else if (m == 0 && b == 0 && a == 0)
-					_putchar ('0');
-				else
+				else if (m <= 9 && m > 0)
 				{
 					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
 					_putchar (m + '0');
+				}
+				else if (m == 0 && b != 0 && a == 0)
+				{
+					_putchar (',');
+					_putchar (' ');
+					_putchar ('0');
+				}
+				else
+				{
+					_putchar ('0');
 				}
 		}
 	_putchar ('\n');
