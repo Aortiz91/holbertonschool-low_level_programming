@@ -22,7 +22,7 @@ int m;
 				}
 				else if (m == 0)
 				{
-					_putchar ('0')
+					_putchar ('0');
 				}
 
 				else
