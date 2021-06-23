@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_times_table - Entry point
- * @n: integer
+i * @n: integer
  * Description: Print n times table
  * Return:
  */
@@ -24,7 +24,7 @@ int a, b, m;
 					_putchar (',');
 					_putchar (' ');
 					_putchar ((m / 100) + '0');
-					_putchar ((m / 10) + '0');
+					_putchar (((m / 10) % 10) + '0');
 					_putchar ((m % 10) + '0');
 				}
 				else if (m > 9 && m < 100)
