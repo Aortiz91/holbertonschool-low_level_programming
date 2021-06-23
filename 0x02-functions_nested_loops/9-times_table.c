@@ -32,7 +32,7 @@ int m;
 					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
-					_putchat ('0');
+					_putchar ('0');
 				}
 				else
 				{
