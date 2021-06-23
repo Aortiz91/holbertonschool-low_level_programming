@@ -13,7 +13,7 @@ int m;
 		for (b = 0; b < 10; b++)
 		{
 			m = (a * b);
-				if (m > 10)
+				if (m > 9)
 				{
 					_putchar ((m / 10) + '0');
 					_putchar ((m % 10) + '0');
