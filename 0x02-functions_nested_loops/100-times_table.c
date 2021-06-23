@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
  * print_times_table - Entry point
-i * @n: integer
+ * @n: integer
  * Description: Print n times table
  * Return:
  */
 void print_times_table(int n)
 {
 int a, b, m;
-	if (n <= 15 || n >= 0)
-	{
+	if (n > 15 || n < 0)
+	return;
 	for (a = 0; a <= n ; a++)
 	{
 		for (b = 0; b <= n; b++)
@@ -47,4 +47,3 @@ int a, b, m;
 	_putchar ('\n');
 	}
 	}
-}
