@@ -15,17 +15,22 @@ int m;
 			m = (a * b);
 				if (m > 9)
 				{
+					_putchar (',');
+					_putchar (' ');
 					_putchar ((m / 10) + '0');
 					_putchar ((m % 10) + '0');
-					_putchar (',');
-					_putchar (' ');
 				}
+				else if (m == 0)
+				{
+					_putchar ('0')
+				}
+
 				else
 				{
-					_putchar (m + '0');
 					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
+					_putchar (m + '0');
 				}
 		}
 	_putchar ('\n');
