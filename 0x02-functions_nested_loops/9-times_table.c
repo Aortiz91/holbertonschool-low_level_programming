@@ -24,7 +24,8 @@ int m;
 				{
 					_putchar (m + '0');
 					_putchar (',');
-					_putchar ('  ');
+					_putchar (' ');
+					_putchar (' ');
 				}
 		}
 	_putchar ('\n');
