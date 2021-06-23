@@ -14,12 +14,16 @@ int m;
 		{
 			m = (a * b);
 				if (m > 10)
+				{
 					_putchar ((m / 10) + '0');
 					_putchar ((m % 10) + '0');
 					_putchar (',');
 					_putchar (' ');
+				}
 				else
+				{
 					_putchar (m + '0');
+				}
 		}
 	_putchar ('\n);
 	}
