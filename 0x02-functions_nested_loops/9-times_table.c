@@ -20,11 +20,11 @@ int m;
 					_putchar ((m / 10) + '0');
 					_putchar ((m % 10) + '0');
 				}
-				else if (m == 0 && a == 0 && b != 0)
+				else if (m == 0 && b == 0 && a != 0)
 				{
 					_putchar ('0');
 				}
-				else if (m == 0 && a != 0 && b == 0)
+				else if (m == 0 && b != 0 && a == 0)
 				{
 					_putchar ('0');
 					_putchar (',');
