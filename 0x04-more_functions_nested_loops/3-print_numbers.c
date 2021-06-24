@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
  * print_numbers - Entry point
- * Description: Write a function that prints the numbers,
- * from 0 to 9, followed by a new line.
+ * Description: Function that prints the numbers frim 0-9
  * Return: (void)
  */
 void print_numbers(void)
