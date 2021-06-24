@@ -11,7 +11,11 @@ for (b = 0; b <= 10; b++)
 {
 for (a = 0; a <= 14; a++)
 {
-_putchar(a + '0');
+if (a > 9)
+{
+_putchar((a / 10) + '0');
+}
+_putchar((a % 10) + '0');
 }
 _putchar('\n');
 }
