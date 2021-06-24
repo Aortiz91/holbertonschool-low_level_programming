@@ -18,10 +18,10 @@ int main(void)
 		else if ((a % 5 == 0) && (a % 3 != 0))
 		printf(" Buzz");
 		else if ((a % 5 == 0) && (a % 3 == 0))
-		print(" FizzBuzz");
+		printf(" FizzBuzz");
 		else
 		printf(" %d", a);
 	}
-	printf('\n');
+	printf("\n");
 return (0);
 }
