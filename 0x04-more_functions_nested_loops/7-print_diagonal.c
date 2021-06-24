@@ -1,25 +1,29 @@
 #include "holberton.h"
 /**
  * print_diagonal - Entry point
- * @n: number of diagonal repeats.
+ * @n: number of diagonals repeats.
  * Description: Draws a diagonal line in the terminal.
  * Return:
  */
 void print_diagonal(int n)
 {
-int a, b;
-if (n < 0)
+int bar, sp;
+{
+if (n <= 0)
 _putchar('\n');
-else if ((n > 0) && (n < 2))
-_putchar ('\\');
-_putchar ('\n');
 else
 {
-_putchar('\\');
-_putchar('\n');
-for (a = 1; a < n; a++)
-_putchar(' ');
-_putchar('\\');
-_putchar('\n');
+	for (sp = 0; sp < n; sp++)
+	{
+		for (bar = 0; bar < n; bar++)
+		{
+			if (sp == bar)
+			_putchar('\\');
+			else
+			_putchar(' ');
+		}
+	_putchar('\n');
+	}
+}
 }
 }
