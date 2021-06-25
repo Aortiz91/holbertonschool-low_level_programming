@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_triangle - Entry point
- * @ size: integer, size of triangle
+ * @size: integer, size of triangle
  * Description: Write a function that prints a triangle,
  * followed by a new line.
  */
@@ -16,7 +16,7 @@ int a, b;
 	{
 		for (a = 1; a <= size; a++)
 		{
-			for (b = a; b <size; b++)
+			for (b = a; b < size; b++)
 			{
 				_putchar(' ');
 			}
