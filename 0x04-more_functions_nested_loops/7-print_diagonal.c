@@ -18,10 +18,14 @@ int row, col;
 			for (col = 1; col <= n; col++)
 			{
 				if (col == row)
+				{
 					_putchar('\\');
 					_putchar('\n');
+				}
 				else
+				{
 					_putchar(' ');
+				}
 			}
 		}
 	}
