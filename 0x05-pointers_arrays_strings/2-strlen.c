@@ -1,9 +1,7 @@
 #include "holberton.h"
 /**
- * _strlen: - Entry point.
+ * _strlen - Returns the length of a string.
  * @s: string
- * Description: Write a function that returns the length of a string.
- * Return: a
  */
 int _strlen(char *s)
 {
