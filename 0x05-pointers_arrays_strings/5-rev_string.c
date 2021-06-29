@@ -16,7 +16,7 @@ void rev_string(char *s)
 
 	b = a - 1;
 
-	for (c = 0; c < (b / 2); c++)
+	for (c = 0; c < (a / 2); c++)
 	{
 		com = s[c];
 		s[c] = s[b];
