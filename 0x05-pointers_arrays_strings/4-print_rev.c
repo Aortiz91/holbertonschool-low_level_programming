@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_rev - print a string in reverse 
+ * print_rev - print a string in reverse
  * @s: string
  */
 void print_rev(char *s)
@@ -9,7 +9,7 @@ void print_rev(char *s)
 
 	a = 0;
 
-	while (str[a] != '\0')
+	while (s[a] != '\0')
 	{
 		a++;
 	}
@@ -18,7 +18,7 @@ void print_rev(char *s)
 
 	for ((c = b - 1); c >= 0; c--)
 	{
-                _putchar(s[c]);
+		_putchar(s[c]);
 	}
 	_putchar('\n');
 }
