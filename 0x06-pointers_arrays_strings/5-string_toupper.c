@@ -5,14 +5,14 @@
  * @string: string
  * Return: Always 0
  */
-char *string_toupper(char *string)
+char *string_toupper(char *str)
 {
-	char a;
+	int a;
 
-	for (a = 0; string[a] != '\0'; a++)
+	for (a = 0; str[a] != '\0'; a++)
 	{
-		if (string[a] >= 97 && string[a]  <= 122)
-			string[a] = (string[a] - 32);
+		if (str[a] >= 97 && str[a]  <= 122)
+			str[a] = (str[a] - 32);
 	}
-	return (string);
+	return (str);
 }
