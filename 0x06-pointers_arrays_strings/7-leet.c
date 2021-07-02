@@ -2,7 +2,7 @@
 /**
  * *leet - Write a function that encodes a string into 1337.
  * @s: string to encode
- * Return: Always 0
+ * Return: s
  */
 char *leet(char *s)
 {
@@ -11,11 +11,12 @@ char *leet(char *s)
 	char leet[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 		for (a = 0; s[a] != '\0'; a++)
-			;
+		{
 		for (b = 0; ch[b]; b++)
 		{
 			if (s[a] == ch[b])
 				s[a] = leet[b];
+		}
 		}
 return (s);
 }
