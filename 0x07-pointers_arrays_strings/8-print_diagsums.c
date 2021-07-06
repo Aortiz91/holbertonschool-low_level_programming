@@ -9,6 +9,7 @@
 void print_diagsums(int *a, int size)
 {
 	int b;
+
 	sumx = 0;
 	sumy = 0;
 
@@ -17,5 +18,5 @@ void print_diagsums(int *a, int size)
 		sumx += a[(size + 1) * b];
 		sumy += a[(size - 1) * (b + 1)];
 	}
-	printf(%d, %d\n", sumx, sumy);
+	printf("%d, %d\n", sumx, sumy);
 }
