@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * *_strstr - Write a function that locates a substring
  * @haystack: string containing the needle
@@ -18,5 +17,5 @@ char *_strstr(char *haystack, char *needle)
 				return (haystack + a);
 		}
 	}
-	return (NULL);
+	return ('\0');
 }
