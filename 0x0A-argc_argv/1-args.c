@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * main - Write a program that prints its name, followed by a new line
+ * main - Write a program that prints the number of arguments passed into it.
  * @argv: array of arguments
  * @argc: count of arguments
  * Return: name of the program
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc -1);
-	argv[0] = 0;
+	priintf("%d\n", argc -1);
 	return (0);
 }
