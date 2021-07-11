@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
- * _isupper - Entry point
- * @c: integer
- * Description: Will return if C is uppercase character
+ * _isupper - Will return if C is uppercase character
+ * @c: integer to evaluate
  * Return: (1) Success
  */
 int _isupper(int c)
