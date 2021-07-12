@@ -1,4 +1,4 @@
-#include <stdio.h>i
+#include <stdio.h>
 /**
  * main - Entry data
  * Write a program that prints all possible different combinations
