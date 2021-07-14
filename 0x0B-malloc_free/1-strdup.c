@@ -14,18 +14,20 @@ char *_strdup(char *str)
 	int a;
 	int len = 0;
 
-	for (len = 0; *(str + len) != '\0'; len++)
-	;
-	p = malloc(sizeof(char) * len + 1);
-	if (p)
+	if (str)
 	{
-		for (a = 0; a < len; a++)
+		for (len = 0; *(str + len) != '\0'; len++)
+		;
+		p = malloc(sizeof(char) * len + 1);
+		if (p)
 		{
-			p[a] = str[a];
+			for (a = 0; a < len; a++)
+			{
+				p[a] = str[a];
+			}
+			p[len] = '\0';
+			return (p);
 		}
-		p[len] = '\0';
-		return (p);
 	}
-	;
-	return (NULL);
+	return (p);
 }
