@@ -23,30 +23,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (b = 0; s2[b] != '\0'; b++)
 		;
 	if (n < b)
-	{
 		s3 = malloc(sizeof(char) * (a + n + 1));
-		if (s3 == NULL)
-			return (NULL);
-		for (c = 0, d = 0; c < (a + n + 1); c++)
-		{
-			if (c < a)
-				s3[c] = s1[c];
-			else
-				s3[c] = s2[d++];
-		}
-	}
 	else
-	{
 		s3 = malloc(sizeof(char) * (a + b + 1));
-		if (s3 == NULL)
+	if (!s3)
 			return (NULL);
-		for (c = 0, d = 0; c < (a + b + 1); c++)
-		{
-			if (c < a)
-				s3[c] = s1[c];
-			else
-				s3[c]  = s2[d++];
-		}
-	}
+	for (c = 0; c < a; c++)
+		s3[c] = s1[c];
+	if (n < b)
+		for (d = 0; d < n; d++)
+		s3[c + d] = s2[d];
+	else
+		for (d = 0; d < b; d++)
+		s3[c + d] = s2[d];
+	s3[c + d]  = '\0';
 	return (s3);
 }
