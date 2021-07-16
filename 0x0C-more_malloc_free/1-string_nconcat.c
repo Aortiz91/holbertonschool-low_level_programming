@@ -25,6 +25,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < b)
 	{
 		s3 = malloc(sizeof(char) * (a + n + 1));
+		if (s3 == NULL)
+			return (NULL);
 		for (c = 0, d = 0; c < (a + n + 1); c++)
 		{
 			if (c < a)
@@ -36,6 +38,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 	{
 		s3 = malloc(sizeof(char) * (a + b + 1));
+		if (s3 == NULL)
+			return (NULL);
 		for (c = 0, d = 0; c < (a + b + 1); c++)
 		{
 			if (c < a)
@@ -44,7 +48,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				s3[c]  = s2[d++];
 		}
 	}
-	if (s3 == NULL)
-	return (NULL);
 	return (s3);
 }
