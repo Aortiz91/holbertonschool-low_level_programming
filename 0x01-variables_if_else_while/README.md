@@ -1,6 +1,6 @@
 # 0x01. C - Variables, if, else, while
 
-### 0-positive_or_negative.c -Complete the source code in order to print whether the number stored in the variable n is positive or negative.
+### 0-positive_or_negative.c _Complete the source code in order to print whether the number stored in the variable n is positive or negative.
 ```
 You can find the source code [here](https://intranet.hbtn.io/rltoken/7UBSgP4-dX9UI_R-fz7yYQ)
 The variable n will store a different value every time you will run this program
