@@ -1,4 +1,4 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef 4_SUM_H
+#define 4_SUN_H
 #define SUM(x,y) (x) + (y)
 #endif
