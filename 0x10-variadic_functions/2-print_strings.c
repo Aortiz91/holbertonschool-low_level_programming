@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+#include <stdarg.h>
 /**
  * print_strings - Write a function that prints strings, followed by
  * a new line.
