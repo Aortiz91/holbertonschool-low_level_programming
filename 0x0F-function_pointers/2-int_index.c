@@ -4,6 +4,7 @@
  * @array: array
  * @size: array size
  * @cmp: function pointer
+ * Return: index of the frst element that cmp does not return
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
