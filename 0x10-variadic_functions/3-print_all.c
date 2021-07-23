@@ -13,14 +13,6 @@ void print_all(const char * const format, ...)
 
 	va_start(parameters, format);
 	
-	if (format);
-	{
-		while (foprmat[i])
-		{
-			switch (format[i])
-			{
-				case 
-
 va_end(parameters);
 printf("\n");
 }
