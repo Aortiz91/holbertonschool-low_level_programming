@@ -7,7 +7,7 @@
  * Return: n
  */
 
-int _num_print(int n)
+void print_number(int n)
 {
 	if (n < 0)
 	{
@@ -19,5 +19,4 @@ int _num_print(int n)
 		_num_print(n / 10);
 	}
 	_putchar((n % 10) + '0');
-	return(n);
 }
