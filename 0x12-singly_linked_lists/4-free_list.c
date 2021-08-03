@@ -15,5 +15,6 @@ void free_list(list_t *head)
 		tmp = head; /*save HEAD in tmp variable*/
 		head = head->next;/*HEAD ponint to the next node on the list*/
 		free(tmp);/*safely free tmp variable*/
+		head = tmp;
 	}
 }
