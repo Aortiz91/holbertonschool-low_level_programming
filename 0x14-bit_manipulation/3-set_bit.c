@@ -8,9 +8,10 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > 64)
+	if (index > 64) /*I will only have 64 bis*/
 		return (-1);
-	else
-		*n = *n | (1 << index);
+	*n = *n | (1 << index); /*bitwise left shift "index" times
+				  and used operator OR to convert
+				  my byte to 1*/
 	return (1);
 }
