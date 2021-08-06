@@ -10,8 +10,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index > 64) /*I will only have 64 bis*/
 		return (-1);
-	*n = *n & (1 >> index); /*bitwise rigth shift "index" times*/
-				 /*and used operator AND to convert*/
-				 /* my byte to 0*/
+	*n = *n & (1 >> index); /*when using bitwise rigth shift "index"*/
+				 /*I remove the only byte I have and used*/
+				/*the operator AND to convert to 0*/
+				 /* my byte in n*/
 	return (1);
 }
