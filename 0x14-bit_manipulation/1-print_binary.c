@@ -3,7 +3,7 @@
  * print_binary - Write a function that prints the binary representation
  * of a number.
  * @n: binary
- * Return: (converted to decimal)
+ * Return: (converted to binary)
  */
 void print_binary(unsigned long int n)
 {
