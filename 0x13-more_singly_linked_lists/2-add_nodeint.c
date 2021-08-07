@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_listint - Write a function that adds a new node at the beginning
+ * add_nodeint - Write a function that adds a new node at the beginning
  * of a listint_t list.
- * @head: new node 
+ * @head: new node
  * @n: data of my new node
  * Return: Adrres of the new element or NULL
  */
