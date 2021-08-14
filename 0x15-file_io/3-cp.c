@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int o_from, o_to, r, w;
+	int o_from, o_to, c_from, c_to, r, w;
 	char buffer[1024];
 
 	r = 1024;
@@ -33,11 +33,11 @@ int main(int argc, char *argv[])
 		if (w == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
-	close(o_from);
-	close(o_to);
-	if ((close(o_from)) == -1)
+	c_from = close(o_from);
+	c_to = close(o_to);
+	if (c_from == -1)
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o_from), exit(100);
-	if ((close(o_to)) == -1)
+	if (c_to == -1)
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o_to), exit(100);
 	return (0);
 }
