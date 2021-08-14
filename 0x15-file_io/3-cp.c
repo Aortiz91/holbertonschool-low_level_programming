@@ -17,13 +17,21 @@ int main(int argc, char *argv[])
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 	o_from = open(argv[1], O_RDONLY);
-	o_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	o_to = open(argv[2], O_CREAT | O_EXCL | O_WRONLY, 0664);
+	if (o_to == -1)
+		o_to = open(argv[2], O_TRUNC | O_WRONLY);
 	r = 1024;
 	while (r == 1024)
 	{	r = read(o_from, buffer, r);
 		w = write(o_to, buffer, r);
+		if (r == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
 		if (w == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
 	}
 	close(o_from);
 	close(o_to);
