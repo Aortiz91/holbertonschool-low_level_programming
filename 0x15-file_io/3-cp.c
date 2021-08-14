@@ -30,8 +30,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		if (w == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 	close(o_from);
 	close(o_to);
