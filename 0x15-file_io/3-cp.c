@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Write a program that copies the content of a file to another file.
- * @argc: count of arguments 
+ * @argc: count of arguments
  * @argv: pointer to arguments
  * Return: 0 Success
  */
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	if (argv[1] == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 	o_from = open(argv[1], O_RDONLY);
 	o_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
