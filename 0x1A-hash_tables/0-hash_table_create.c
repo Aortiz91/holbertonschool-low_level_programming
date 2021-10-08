@@ -3,6 +3,7 @@
  * hash_table_create - Allocate the requisite memory for a new hash_table_t
  * and it's indexed array. Assign size of the array in new_table->size
  * @size: size of the hash_table_t array
+ *
  * Return: On Success returns a pointer to the new hash table, if not NULL
  */
 
