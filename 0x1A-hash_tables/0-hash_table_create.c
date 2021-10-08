@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include <stdlib.h>
 /**
  * hash_table_create - Allocate the requisite memory for a new hash_table_t
  * and it's indexed array. Assign size of the array in new_table->size
