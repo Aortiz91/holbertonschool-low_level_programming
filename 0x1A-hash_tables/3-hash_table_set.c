@@ -10,7 +10,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_node;
-	const unsigned char * newkey;
+	const unsigned char *newkey;
 
 	if (!ht)
 		return (0);
@@ -23,26 +23,26 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newkey = (const unsigned char *)key;
 	add_node(ht, newkey, new_node);
 
-	return(1);
+	return (1);
 }
 
 /**
  * add_node - adds a node to the hash table
  * @ht: hash table to add / update the key / value
- * @node: node with value to add
+ * @key: key to add to the node
+ * @new_node: node with value to add
  * Return: Nothong on success
  */
 int add_node(hash_table_t *ht, const unsigned char *key, hash_node_t *new_node)
 {
-	unsigned long int index, i = 0;
-	hash_node_t *tmp;
+	unsigned long int index;
 
-	index = key_index(*key, ht->size);
+	index = key_index(key, ht->size);
 
 	if (!ht->array[index])
 		return (0);
 
-	if (ht->array[index] = NULL)
+	if ((ht->array[index]) == NULL)
 	{
 		ht->array[index] = new_node;
 	}
