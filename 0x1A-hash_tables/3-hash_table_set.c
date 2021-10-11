@@ -40,12 +40,10 @@ int add_node(hash_table_t *ht, const unsigned char *key, hash_node_t *new_node)
 
 	index = key_index(key, ht->size);
 
-	if (!ht->array[index])
-		return (0);
-
-	if ((ht->array[index]) == NULL)
+	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = new_node;
+		return (1);
 	}
 	else
 	{
