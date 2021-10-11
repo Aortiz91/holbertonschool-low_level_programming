@@ -49,6 +49,6 @@ int add_node(hash_table_t *ht, const unsigned char *key, hash_node_t *new_node)
 	{
 		new_node->next = ht->array[index];
 		ht->array[index] = new_node;
+		return (1);
 	}
-	return (1);
 }
